@@ -1,0 +1,47 @@
+.security {
+  overflow: auto;
+  height: 100vh;
+  width: 100%;
+  padding: 0 20px;
+  .security__container {
+    max-width: 700px;
+    width: 100%;
+    margin: 50px auto;
+    .change-password {
+      margin-top: 20px;
+      h2 {
+        margin-bottom: 10px;
+      }
+      .change-password__form {
+        .change-password__input {
+          border: 1px solid #4CAF4F;
+          border-radius: 15px;
+          padding: 10px;
+          outline: none;
+          width: 100%;
+        }
+        .change-password__input_error {
+          border: 1px solid #d83535;
+          border-radius: 15px;
+          padding: 10px;
+          outline: none;
+          width: 100%;
+        }
+        .change-password__form-btn {
+          position: relative;
+          width: 200px;
+          height: 40px;
+          color: #fff;
+          background: #4CAF4F;
+          border-radius: 10px;
+          margin-left: calc(100% - 200px);
+          font-weight: 600;
+          transition: all 0.3s;
+          &:hover {
+            background: #27862b;
+          }
+        }
+      }
+    }
+  }
+}

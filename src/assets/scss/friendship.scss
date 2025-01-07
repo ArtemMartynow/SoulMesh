@@ -1,0 +1,188 @@
+.friendship-sidebar {
+  width: 100%;
+  height: 50px;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #4CAF4F;
+    height: 50px;
+    li {
+      width: 100%;
+      text-align: center;
+      position: relative;
+      cursor: pointer;
+      a {
+        height: 100%;
+        align-items: center;
+      }
+    }
+    .active-link {
+      background: #4CAF4F;
+      color: #fff;
+    }
+    .friendship-sidebar__center-link {
+      border-left: 2px solid #4CAF4F;
+      border-right: 2px solid #4CAF4F;
+    }
+  }
+}
+
+.my-friends {
+  width: 100%;
+  height: 100vh;
+  padding: 10px;
+  text-align: center;
+  overflow: auto;
+  height: 90vh;
+  &::-webkit-scrollbar {
+    width:  10px;
+    height: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #d7c8c8;
+    border-radius: 10px;
+  }
+  .search__inp {
+    border: 1px solid #4CAF4F;
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+  .friend-card {
+    position: relative;
+    transition: all 0.2s;
+    border-radius: 10px;
+    &:hover {
+      background: #d7c8c8;
+    }
+    a {
+      display: flex;
+      margin: 5px 0;
+      padding: 10px;
+      position: relative;
+      text-align-last: left;
+      cursor: pointer;
+      text-align: center;
+      .friend-card__avatar {
+        img {
+          width: 56px;
+          height: 56px;
+        }
+      }
+    }
+    .add-friend {
+      background: #4CAF4F;
+      font-size: 14px;
+      width: 110px;
+      height: 30px;
+      border-radius: 10px;
+      position: absolute;
+      right: 20px;
+      top: calc(50% - 15px);
+      color: #fff;
+      transition: all 0.2s;
+      span {
+        margin: 0 auto;
+      }
+      &:hover {
+        background: #27862b;
+      }
+    }
+    .unfriend {
+      background: #da4c4c;
+      font-size: 14px;
+      width: 110px;
+      height: 30px;
+      border-radius: 10px;
+      position: absolute;
+      right: 150px;
+      top: calc(50% - 15px);
+      color: #fff;
+      transition: all 0.2s;
+      span {
+        margin: 0 auto;
+      }
+      &:hover {
+        background: #c52424;
+      }
+    }
+    .cancel-requast {
+      background: #4CAF4F;
+      font-size: 14px;
+      width: 110px;
+      height: 30px;
+      border-radius: 10px;
+      position: absolute;
+      right: 20px;
+      top: calc(50% - 15px);
+      color: #fff;
+      transition: all 0.2s;
+      span {
+        margin: 0 auto;
+      }
+      &:hover {
+        background: #27862b;
+      }
+    }
+  }  
+}
+
+@media (max-width: 769px) {
+  .my-friends {
+    padding-bottom: 100px;
+  }
+}
+
+@media (max-width: 570px) {
+  .my-friends {
+    .friend-card {
+      padding: 10px 5px;
+      a {
+        width: 100%;
+        padding: 0;
+      }
+      .add-friend {
+       position: relative;
+       right: 0;
+       width: 100%;
+       margin: 0 auto;
+       margin-top: 10px;
+      }
+      .unfriend {
+        position: relative;
+        right: 0;
+        width: 100%;
+        margin: 0 auto;
+      }
+      .cancel-requast {
+        position: relative;
+        right: 0;
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .friendship-sidebar {
+    height: 115px;
+    ul {
+      display: block;
+      height: 111px;
+      li {
+        border-top: 2px solid #4CAF4F;
+        a {
+          height: 35px;
+        }
+      }
+      .friendship-sidebar__center-link {
+        border-right: none;
+        border-left: none;
+      }
+    }
+  }
+}

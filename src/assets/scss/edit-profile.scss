@@ -1,0 +1,235 @@
+.edit-profile {
+  overflow: auto;
+  height: 100vh;
+  width: 100%;
+  padding: 0 20px;
+  .edit-profile__container {
+    max-width: 700px;
+    width: 100%;
+    margin: 50px auto;
+    .change-photo {
+      display: flex;
+      background: #dfd8d8;
+      justify-content: space-between;
+      padding: 15px;
+      border-radius: 20px;
+      align-items: center;
+      margin-top: 20px;
+      .change-photo__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #4CAF4F;
+        width: 140px;
+        height: 30px;
+        border-radius: 10px;
+        color: #fff;
+        font-weight: 600;
+        transition: all 0.3s;
+        text-align: center;
+        &:hover {
+          background: #27862b;
+        }
+        label {
+          cursor: pointer;
+        }
+      }
+    }
+    .about-me {
+      margin-top: 20px;
+      h2 {
+        margin-bottom: 10px;
+      }
+      .edit-profile__form {
+        .edit-profile__input {
+          border: 1px solid #4CAF4F;
+          border-radius: 15px;
+          padding: 10px;
+          outline: none;
+          width: 100%;
+        }
+        .edit-profile__input_error {
+          border: 1px solid #d83535;
+          border-radius: 15px;
+          padding: 10px;
+          outline: none;
+          width: 100%;
+        }
+        .edit-profile__select {
+          position: relative;
+          .option__wrapper {
+            position: absolute;
+            background: #fff;
+            z-index: 2;
+            width: 100%;
+          }
+          .select__option {
+            border: 1px solid #4CAF4F;
+            border-radius: 15px;
+            padding: 11px 10px;
+            outline: none;
+            width: 100%;
+            color: #ad9f9f;
+            height: 45px;
+          }
+          .option {
+            padding: 8px;
+            border: 1px solid #4CAF4F;
+            &:hover {
+              background: #d5cdcd;
+            }
+            &:first-of-type {
+              border-top-left-radius: 8px;
+              border-top-right-radius: 8px;
+            }
+            &:last-of-type {
+              border-bottom-left-radius: 8px;
+              border-bottom-right-radius: 8px;
+            }
+          }
+        }
+        .edit-profile__select_active {
+          position: relative;
+          .option__wrapper {
+            position: absolute;
+            background: #fff;
+            z-index: 2;
+            width: 100%;
+          }
+          .select__option {
+            border: 1px solid #4CAF4F;
+            border-radius: 15px;
+            padding: 11px 10px;
+            outline: none;
+            width: 100%;
+            color: #ad9f9f;
+            height: 45px;
+            color: #000;
+          }
+          .option {
+            padding: 8px;
+            border: 1px solid #4CAF4F;
+            &:hover {
+              background: #d5cdcd;
+            }
+            &:first-of-type {
+              border-top-left-radius: 8px;
+              border-top-right-radius: 8px;
+            }
+            &:last-of-type {
+              border-bottom-left-radius: 8px;
+              border-bottom-right-radius: 8px;
+            }
+          }
+        }
+        .edit-profile__textarea {
+          border: 1px solid #4CAF4F;
+          border-radius: 15px;
+          padding: 10px;
+          outline: none;
+          width: 100%;
+          height: 80px;
+          resize: none;
+        }
+        .edit-profile__textarea_error {
+          border: 1px solid #d83535;
+          border-radius: 15px;
+          padding: 10px;
+          outline: none;
+          width: 100%;
+          height: 80px;
+          resize: none;
+        }
+        .dp__input_wrap {
+          input {
+            border: 1px solid #4CAF4F;
+            border-radius: 15px;
+            padding: 10px 35px;
+            outline: none;
+            width: 100%;
+          }
+        }
+        .calendar__error {
+          .dp__input_wrap input {
+            border: 1px solid #d83535;
+          }
+        }
+        .settings-form__btn {
+          position: relative;
+          width: 200px;
+          height: 40px;
+          color: #fff;
+          background: #4CAF4F;
+          border-radius: 10px;
+          margin-left: calc(100% - 200px);
+          font-weight: 600;
+          transition: all 0.3s;
+          &:hover {
+            background: #27862b;
+          }
+        }
+        .settings-form__btn_no-active {
+          position: relative;
+          width: 200px;
+          height: 40px;
+          color: #fff;
+          background: #858885;
+          border-radius: 10px;
+          margin-left: calc(100% - 200px);
+          font-weight: 600;
+          transition: all 0.3s;
+          cursor: auto;
+        }
+      }
+    }
+    .change-password {
+      margin-top: 20px;
+      h2 {
+        margin-bottom: 10px;
+      }
+      .change-password__form {
+        .change-password__input {
+          border: 1px solid #4CAF4F;
+          border-radius: 15px;
+          padding: 10px;
+          outline: none;
+          width: 100%;
+        }
+        .change-password__input_error {
+          border: 1px solid #d83535;
+          border-radius: 15px;
+          padding: 10px;
+          outline: none;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .edit-profile {
+    .edit-profile__container {
+      margin-top: 20px;
+      margin-bottom: 75px;
+    }
+  }
+}
+
+@media (max-width: 478px) {
+  .edit-profile {
+    .edit-profile__container {
+      .change-photo {
+        display: block;
+        .photo {
+          width: 100%;
+          justify-content: center;
+        }
+        .change-photo__btn {
+          margin-top: 10px;
+          margin-left: calc(50% - 70px);
+        }
+      }
+    }
+  }
+}

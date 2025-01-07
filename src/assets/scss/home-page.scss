@@ -1,0 +1,526 @@
+.preview-container {
+  background: #F5F7FA;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 200px;
+  padding-bottom: 96px;
+  .preview-container__content {
+    width: 657px;
+    height: 276px;
+    color: #717171;
+    margin-right: 25px;
+    h1 {
+      font-size: 64px;
+      font-weight: 600;
+      line-height: normal;
+      color: #4D4D4D;
+      span {
+        color: #4CAF4F;
+      }
+    }
+  }
+}
+
+.our-clients {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.manage-community__cards {
+  padding-bottom: 62px;
+  .manage-community__card {
+    width: 300px;
+    text-align: center;
+    padding: 24px 0;
+    box-shadow: 0px 2px 4px 0px rgba(171, 190, 209, 0.20);
+    border-radius: 8px;
+    color: #4D4D4D;
+    margin: 10px;
+    p {
+      color: #717171;
+    }
+  }
+}
+
+.pixelgrade {
+  .pixelgrade__content {
+    width: 58%;
+    color: #4D4D4D;
+    p {
+      width: 91%;
+      font-size: 14px;
+      margin-top: 16px;
+      margin-bottom: 44px;
+      color: #717171;
+    }
+  }
+}
+
+.achievements {
+  background: #F5F7FA;
+  color: #4D4D4D;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  margin: 48px 0;
+  .achievements__content {
+    width: 540px;
+    span {
+      color: #4CAF4F;
+    }
+    p {
+      color: #18191F;
+      margin-top: 8px;
+    }
+  }
+  .achievements__calculations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 540px;
+    height: 160px;
+    color: #4D4D4D;
+    .achievements__statistics {
+      height: 60px;
+      width: 255px;
+      display: flex;
+      align-items: center;
+      img {
+        height: 48px;
+        width: 48px;
+        margin-right: 16px;
+      }
+      p {
+        color: #717171;
+      }
+    }
+  }
+}
+
+.calender {
+  .calender__content {
+    width: 58%;
+    color: #4D4D4D;
+    p {
+      width: 91%;
+      font-size: 14px;
+      margin-top: 16px;
+      margin-bottom: 32px;
+      color: #717171;
+    }
+  }
+}
+
+.customer {
+  background: #F5F7FA;
+  color: #717171;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+  margin: 48px 0;
+  .customer__img {
+    width: 358px;
+    height: 359px;
+  }
+  .customer__content {
+    width: 66%;
+    margin-top: 6px;
+    span {
+      color: #4CAF4F;
+      font-size: 20px;
+      font-weight: 600;
+    }
+    p {
+      color: #89939E;
+      margin-top: 8px;
+      margin-bottom: 32px;
+    }
+    a {
+      display: flex;
+      justify-content: space-between;
+      width: 240px;
+      padding: 8px;
+      font-size: 20px;
+      color: #4CAF4F;
+      font-weight: 600;
+      transition: all 0.3s;
+      border-radius: 4px;
+      align-items: center;
+      &:hover {
+        background: #e7e7e7;
+      }
+      &:active {
+        background: #E8F5E9;
+      }
+    } 
+  }
+}
+
+.new-marketing {
+  .new-marketing__subtitle {
+    max-width: 628px;
+    margin: 0 auto;
+  }
+  .new-marketing__cards {
+    .new-marketing__card {
+      width: 368px;
+      height: 366px;
+      position: relative;
+
+      margin: 20px 3px;
+      .new-marketing__card-content {
+        width: 317px;
+        height: 176px;
+        padding: 16px;
+        position: absolute;
+        bottom: 0;
+        left: calc(50% - 159px);
+        text-align: center;
+        color: #717171;
+        font-weight: 600;
+        background: #F5F7FA;
+        border-radius: 8px;
+        box-shadow: 0px 8px 16px 0px rgba(171, 190, 209, 0.40);
+        a {
+          display: flex;
+          justify-content: space-between;
+          padding: 8px 74px;
+          font-size: 20px;
+          color: #4CAF4F;
+          font-weight: 600;
+          transition: all 0.3s;
+          border-radius: 4px;
+          align-items: center;
+          margin-top: 16px;
+          &:hover {
+            background: #e7e7e7;
+          }
+          &:active {
+            background: #E8F5E9;
+          }
+        }
+      }
+    }
+  }
+}
+
+.demo-game {
+  background: #F5F7FA;
+  color: #263238;
+  text-align: center;
+  padding: 32px 0;
+  margin-top: 95px;
+  h2 {
+    font-size: 76px;
+    font-weight: 600;
+  }
+  .demo-game__btn {
+    display: flex;
+    justify-content: space-between;
+    width: 178px;
+    padding: 14px 32px;
+    font-size: 16px;
+    align-items: center;
+    margin-left: calc(50% - 89px);
+    margin-top: 32px;
+  }
+}
+
+@media (max-width: 1295px) {
+  .achievements {
+    .achievements__calculations {
+      .achievements__statistics {
+        width: 175px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  header {
+    padding: 30px 2%;
+    a {
+      font-size: 14px;
+    }
+  }
+
+  .main-container {
+    padding-top: 20px;
+    img {
+      display: none;
+    }
+  }
+  
+  .manage-community__cards {
+    .manage-community__card {
+      margin: 5px auto;
+    }
+  }
+
+  .pixelgrade {
+    img {
+      display: none;
+    }
+    .pixelgrade__content {
+      margin: 0 auto;
+    }
+  }
+
+  .achievements {
+    flex-wrap: wrap;
+    .achievements__content {
+      margin: 0 auto;
+    }
+    .achievements__calculations {
+      margin: 0 auto;
+      .achievements__statistics {
+        width: 255px;
+      }
+    }
+  }
+
+  .calender {
+    img {
+      display: none;
+    }
+    .calender__content {
+      margin: 0 auto;
+    }
+  }
+
+  .customer {
+    .customer__img {
+      display: none;
+    }
+    .customer__content {
+      margin: 0 auto;
+    }
+  }
+
+  .demo-game {
+    h2 {
+      font-size: 50px;
+    }
+  }
+
+  footer {
+    padding: 64px 8%;
+    .footer__company {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .new-marketing {
+    .new-marketing__cards {
+      display: block;
+      .new-marketing__card {
+        margin: 20px auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    h2 {
+      font-size: 25px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+
+  header {
+    .header__nav {
+      display: none;
+    }
+  }
+
+  .main-container {
+    .main-container__content {
+      width: 100%;
+      margin: 0; 
+      h1 {
+        font-size: 50px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .our-clients {
+    padding: 40px 3%;
+    img {
+      margin: 7px 15px;
+    }
+  }
+
+  .pixelgrade {
+    .pixelgrade__content {
+      width: 100%;
+      h2 {
+        font-size: 25px;
+      }
+    }
+  }
+  
+  .achievements {
+    .achievements__content {
+      width: 100%;
+      margin-bottom: 20px;
+      h2 {
+        font-size: 25px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+    .achievements__calculations {
+      height: 100%;
+      .achievements__statistics {
+        margin: 0 auto;
+        width: 190px;
+      }
+    }
+  }
+
+  .calender {
+    .calender__content {
+      width: 100%;
+    }
+  }
+
+  .customer {
+    .customer__content {
+      width: 100%;
+    }
+  }
+
+  .new-marketing {
+    .new-marketing__cards {
+      padding: 0;
+      .new-marketing__card {
+        width: 315px;
+        height: 315px;
+        .new-marketing__card-content {
+          width: 260px;
+          height: 140px;
+          left: calc(50% - 130px);
+          padding: 11px;
+          p {
+            font-size: 14px;
+            height: 80px;
+          }
+          a {
+            padding: 8px 64px;
+            font-size: 16px;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .demo-game {
+    h2 {
+      font-size: 35px;
+    }
+  }
+
+  footer {
+    .footer__content {
+      flex-wrap: wrap;
+      .footer__links {
+        margin-top: 30px;
+      }
+      .footer__email {
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .title {
+    h2 {
+      line-height: 30px;
+    }
+  }
+
+  header {
+    display: block;
+    img {
+      margin: 0 auto;
+    }
+    .header__registration-login {
+      text-align: center;
+      margin-top: 25px;
+    }
+  }
+
+  .main-container {
+    .main-container__content {
+      height: 100%;
+      h1 {
+        font-size: 38px;
+      }
+    }
+  }
+
+  .our-clients {
+    div {
+      height: 100%;
+    }
+  }
+
+  .pixelgrade {
+    .pixelgrade__content {
+      h2 {
+        line-height: 30px;
+      }
+    }
+  }
+
+  .achievements {
+    .achievements__content {
+      h2 {
+        line-height: 30px;
+      }
+    }
+  }
+
+  .calender {
+    .calender__content {
+      h2 {
+        font-size: 25px; 
+        line-height: 25px;
+      }
+    }
+  }
+
+  .customer {
+    .customer__content {
+      .customer__logos {
+        flex-wrap: wrap;
+        min-width: 100%;
+        img {
+          margin: 10px;
+        }
+      }
+    }
+  }
+
+  .new-marketing {
+    .new-marketing__cards {
+      .new-marketing__card {
+        width: 280px;
+      }
+    }
+  }
+}
